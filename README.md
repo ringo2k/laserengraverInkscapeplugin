@@ -2,6 +2,7 @@
 A laser engraver GCODE generator for Marlin firmware (RepRap) to control a laser or mill. Generated GCODE Out of inkscape files. 
 
 The idea is based on this article: http://www.instructables.com/id/Pocket-laser-engraver/
+Installation is also mentioned there! I only make it work with Marlin.
 
 
 I added some functions to work with a normal MARLIN firmare (the M3 and M5 commands must be added in Firmare like I did in
@@ -16,5 +17,9 @@ I added some features so it is easier to use with a 3D printer.
 * The laser doesn't need to be focused when the nozzle is on Z=0. The focus on the bed of the laser can be once determined
   and then written in the Z Offset. Also when you like to engrave larger objects, which have a own heigt, add this height
   to the parameter to make the laser spot on the top of the object focus again. 
+* Printer waits to place laser thing on the bed, must resumed in GUI
 
+
+
+I am new in python so there are sure some mad hacks i did, sorry for that :-)
 

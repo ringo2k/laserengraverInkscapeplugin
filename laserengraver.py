@@ -2582,6 +2582,9 @@ class Laserengraver(inkex.Effect):
             elif self.options.unit == "G20 (All units in inches)" :
                 self.header += "G20\n"
 
+            self.header += "G01 Z0 F800.0 \n"
+            self.header += "M300 S200 P1000\n"
+            self.header += "M0\n"
             self.header += "G01 X0 Y0 Z0 F800.0 \n"
 
 	
